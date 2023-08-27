@@ -1,30 +1,37 @@
-// const character = "Slah";
+// arrays
+let names = ['luigi', 'mario', 'yoshi'];
 
-// console.log(character);
+names.push('toad');
+// names.push(3);
+// names[1] = 3;
 
-// const inputs = document.querySelectorAll("input");
+let numbers = [10, 20, 12, 15];
 
-// console.log(inputs);
+numbers.push(25);
+// numbers.push('shaun');
+// numbers[0] = 'shaun';
 
-// inputs.forEach((input) => {
-//   console.log(input);
-// });
+let mixed = ['ken', 4, 'chun-li', 8, 9];
 
-let character = "MO";
-let age = 22;
-let isBlackBelt = true;
+mixed.push('ryu');
+mixed.push(10);
+mixed[0] = 3;
 
-// character = 22; //Type 'number' is not assignable to type 'string'
-character = "Mohammed";
-
-// age = "20";  //Type 'string' is not assignable to type 'number'.
-age = 20;
-
-// isBlackBelt="False" //Type 'string' is not assignable to type 'boolean'.
-isBlackBelt = false;
-
-const circ = (diameter: string) => {
-  return diameter * Math.PI;
+// objects
+let ninja = {
+  name: 'mario',
+  belt: 'black',
+  age: 30
 };
 
-console.log(circ(3));
+ninja.age = 40;
+ninja.name = 'ryu';
+// ninja.age = '30';
+// ninja.skills = ['fighting', 'sneaking']
+
+ninja = {
+  name: 'yoshi',
+  belt: 'orange',
+  age: 40,
+  // skills: ['running'],
+};
