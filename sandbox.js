@@ -1,29 +1,39 @@
+// explicit types
+var character;
+var age;
+var isLoggined;
+// character = 22; //Type 'number' is not assignable to type 'string'.
+character = "name";
+// age = "number"; //Type 'string' is not assignable to type 'number'.
+age = 22;
+// isLoggined="flase" //Type 'string' is not assignable to type 'boolean'.
+isLoggined = true;
 // arrays
-var names = ['luigi', 'mario', 'yoshi'];
-names.push('toad');
-// names.push(3);
-// names[1] = 3;
-var numbers = [10, 20, 12, 15];
-numbers.push(25);
-// numbers.push('shaun');
-// numbers[0] = 'shaun';
-var mixed = ['ken', 4, 'chun-li', 8, 9];
-mixed.push('ryu');
-mixed.push(10);
-mixed[0] = 3;
+var names;
+var numbers;
+var booleans;
+// names = [1, 2, 3, 4]; //Type 'number' is not assignable to type 'string'.
+names = ["abc", "def"];
+// numbers = ["abc","def","ijk"]; //Type 'string' is not assignable to type 'number'.
+numbers = [1, 2, 4, 5];
+// booleans=["true" , "false" ]; //Type 'string' is not assignable to type 'boolean'.
+booleans = [true, false, true];
+// union types
+var mixed = [];
+mixed.push("hello");
+mixed.push(12);
+mixed.push(false);
+console.log(mixed);
+var uid;
+uid = "test";
+uid = 10;
+// uid = false; //Type 'boolean' is not assignable to type 'string | number'.
 // objects
-var ninja = {
-    name: 'mario',
-    belt: 'black',
-    age: 30
-};
-ninja.age = 40;
-ninja.name = 'ryu';
-// ninja.age = '30';
-// ninja.skills = ['fighting', 'sneaking']
-ninja = {
-    name: 'yoshi',
-    belt: 'orange',
-    age: 40,
-    // skills: ['running'],
+var ninjaOne;
+ninjaOne = { name: "test", age: 10, isLoggined: false };
+var ninjaTwo;
+ninjaTwo = {
+    name: "mario",
+    age: 10,
+    haveAccount: false,
 };
