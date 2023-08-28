@@ -1,14 +1,13 @@
 "use strict";
-let greet;
-greet = () => {
-    console.log("hello");
+const logDetails = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
 };
-const add = (a, b, c) => {
-    console.log(a + b); // return type is inferred as 'number' by TypeScript compiler when no explicit return statement exists in the function body
+const greet = (user) => {
+    console.log(`${user} say hello`);
 };
-add(5, 8);
-const minus = (a, b) => {
-    return a - b;
+const greetAgain = (user) => {
+    console.log(`${user} say hello`);
 };
-let result = minus(8, 4);
-console.log(result);
+// logDetails(1, "acc");
+// const username = greet({ name: "muhammed", uid: 11 });
+// console.log(username);
