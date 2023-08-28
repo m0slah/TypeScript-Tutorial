@@ -1,5 +1,8 @@
 "use strict";
 class Invoice {
+    //   readonly client: string;
+    //   private details: string;
+    //   public amount: number;
     constructor(client, details, amount) {
         this.client = client;
         this.details = details;
@@ -14,9 +17,9 @@ const invoiceTwo = new Invoice("john", "work on the market systme", 350);
 let invoices = [];
 invoices.push(invoiceOne);
 invoices.push(invoiceTwo);
-invoiceOne.client = "mO";
-invoiceTwo.amount = 200;
-console.log(invoices);
+invoices.forEach((inv) => {
+    console.log(inv.client, inv.amount, inv.format());
+});
 //const form = document.querySelector('form')!;
 const form = document.querySelector(".new-item-form");
 console.log(form.children);
